@@ -10,4 +10,8 @@
 
 @interface YABViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIButton *logButton;
+
+- (IBAction)writeToLog:(id)sender;
+
 @end
