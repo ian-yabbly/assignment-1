@@ -12,6 +12,14 @@
 
 @property (nonatomic, weak) IBOutlet UIButton *logButton;
 
+@property (nonatomic, weak) IBOutlet UISwitch *logSwitch;
+
+@property (nonatomic, weak) IBOutlet UISlider *slider;
+
 - (IBAction)writeToLog:(id)sender;
+
+- (IBAction)writeSwitchStateToLog:(id)sender;
+
+- (IBAction)maybeWriteSliderStateToLog:(id)sender;
 
 @end

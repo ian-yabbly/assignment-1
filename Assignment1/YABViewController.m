@@ -31,4 +31,16 @@
     NSLog(@"The button was pressed");
 }
 
+- (IBAction)writeSwitchStateToLog:(id)sender
+{
+    NSLog(@"The switch is %@", _logSwitch.isOn ? @"on" : @"off");
+}
+
+- (IBAction)maybeWriteSliderStateToLog:(id)sender
+{
+    if (_slider.value > 0.5f) {
+        NSLog(@"The slider was slided %f", _slider.value);
+    }
+}
+
 @end

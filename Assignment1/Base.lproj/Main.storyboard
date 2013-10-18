@@ -26,11 +26,27 @@
                                     <action selector="writeToLog:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LhE-AK-KgE"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-ij-OS0">
+                                <rect key="frame" x="136" y="151" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="writeSwitchStateToLog:" destination="vXZ-lx-hvc" eventType="valueChanged" id="lBK-0w-FSH"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SQi-Zo-QfC">
+                                <rect key="frame" x="101" y="247" width="118" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="maybeWriteSliderStateToLog:" destination="vXZ-lx-hvc" eventType="valueChanged" id="pmd-Qg-AWE"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="logButton" destination="xPL-UQ-naX" id="T5d-5T-iSB"/>
+                        <outlet property="logSwitch" destination="ccN-ij-OS0" id="MkW-0W-eAS"/>
+                        <outlet property="slider" destination="SQi-Zo-QfC" id="XOl-zr-XOx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
